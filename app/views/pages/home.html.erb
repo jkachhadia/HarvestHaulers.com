@@ -1,0 +1,240 @@
+<style>
+	.btn1:hover{
+		color:white;
+		background-color:rgb(30,130,76,0.78);
+	}
+	.button1:hover{
+		color:white;
+		background-color:rgb(30,130,76,0.78);
+
+	}
+</style>
+
+<div class="container-fluid">
+
+		<div class="row text-center main">
+			<br>
+			<div class="row text-center mininav fixed">
+			<div class="col-xs-4">
+				<h3><i class="fa fa-bars"></i></h3>
+			</div>
+			<div class="col-xs-4">
+				<h3>HarvestHauler.com</h3>
+			</div>
+			<div class="row text-center mininav2 fixed">
+			<div class="col-xs-4 col-xs-offset-4 active menu">
+				
+			</div>
+			<div class="col-xs-4 col-xs-offset-4 active menu">
+				<a href="#"><h3>HOME</h3></a>
+			</div>
+			<div class="col-xs-4 col-xs-offset-4 menu">
+				<a href="driver.html"><h3>Driver</h3></a>
+			</div>
+			<div class="col-xs-4 col-xs-offset-4 menu">
+				<a href="shipper.html"><h3>Shipper</h3></a>
+			</div>
+			<div class="col-xs-4 col-xs-offset-4">
+				<h3 class="close"><i class="fa fa-remove fa-lg"></i></h3>
+			</div>
+			</div>
+		</div>
+			<div class="row  text-center">
+				<div class="col-sm-3 col-sm-offset-7">
+					<br>
+					<br><br>
+					<h2>Hauling made</h2>
+					<h2>easy</h2>
+				</div>
+			</div>
+			<div class="row  text-center">
+				<div class="col-sm-3 col-sm-offset-7">
+					<p>
+						Connecting farmers with logistics.
+					</p>
+				</div>
+			</div>
+			<div class="row text-center">
+				<br>
+				<div class="col-sm-2 col-sm-offset-6 button col-xs-4 col-xs-offset-4">
+					<a href="#main3"><h3 class = "btn1">I am a Driver</h3></a>
+				</div>
+				<div class="col-sm-2 col-sm-offset-1 button col-xs-4 col-xs-offset-4">
+					<a href="#main2"><h3 class = "btn1">I want to ship</h3></a>
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+		<div class="row text-center divide">
+			<div class="col-sm-12"><br><br>
+				<h2>Why Ship with Us</h2><br><hr><br>
+			</div>
+			<div class="col-xs-4">
+				<h1>Offline Transactions</h1>
+			</div>
+			<div class="col-xs-4">
+				<h1>Fast and Secure</h1>
+			</div>
+			<div class="col-xs-4">
+				<h1>Very less Hassle</h1>
+			</div>
+		</div>
+		<br>
+		<div class="row text-center main2">
+			<div class="row text-center">
+				<div class="col-sm-12">
+					<br><br><br>
+					<h2>Already a member ?</h2><br><br><br>
+				</div>
+				<div class="col-sm-2 col-sm-offset-2 button1">
+					<h3><%= link_to("See the listings",
+{
+	
+	:action => 'listing'})%></h3>
+				</div>
+				<div class="col-sm-2 col-sm-offset-1 button1">
+					<h3><%= link_to("Add Credits",
+{
+	
+	:action => 'credit'})%></h3>
+				</div>
+				<div class="col-sm-2 col-sm-offset-1 button1">
+					<h3><%= link_to("Login",
+{
+	
+	:action => 'login'})%></h3>
+				</div>
+			</div>
+			<br><br><br><br><br>
+			<hr>
+			<div class="row text-center">
+				<div class="col-sm-12">
+					<br><br><br>
+					<h2>Not a member ?</h2><br><br><br>
+				</div>
+				<div class="col-sm-2 col-sm-offset-2 button1">
+					<h3>See the listings</h3>
+				</div>
+				<div class="col-sm-2 col-sm-offset-1 button1">
+					<h3>About the Service</h3>
+				</div>
+				<div class="col-sm-2 col-sm-offset-1 button1">
+					<h3>Register</h3>
+				</div>
+			</div>
+			<br><br><br>	
+		</div>
+		<div class="row text-center divide">
+			<div class="col-sm-12"><br><br>
+				<h2>Why Drive with Us</h2><br><hr><br>
+			</div>
+			<div class="col-xs-4">
+				<h1>More jobs</h1>
+			</div>
+			<div class="col-xs-4">
+				<h1>No Haggling</h1>
+			</div>
+			<div class="col-xs-4">
+				<h1>Flexible choices</h1>
+			</div>
+		</div>
+		<br>
+		<div class="row text-center main3">
+			<div class="row text-center">
+				<div class="col-sm-12">
+					<br><br><br>
+					<h2>Already a member ?</h2><br><br><br>
+				</div>
+				<div class="col-sm-2 col-sm-offset-2 button1">
+					<h3><%= link_to("Find Jobs",
+{
+	
+	:action => 'job'})%></h3>
+				</div>
+			<div class="col-sm-2 col-sm-offset-1 button1">
+					<h3><%= link_to("Farmpool listings",
+{
+	:controller => 'messages',
+	:action => 'index'})%></h3>
+				</div>
+				<div class="col-sm-2 col-sm-offset-1 button1">
+					<h3><%= link_to("Login",
+{
+	
+	:action => 'login'})%</h3>
+				</div>
+			</div>
+			<br><br><br><br><br>
+			<hr>
+			<div class="row text-center">
+				<div class="col-sm-12">
+					<br><br><br>
+					<h2>Not a member ?</h2><br><br><br>
+				</div>
+				<div class="col-sm-4 col-sm-offset-1 button1">
+					<h3>About the Service</h3>
+				</div>
+				<div class="col-sm-4 col-sm-offset-1 button1">
+					<h3>Register</h3>
+				</div>
+			</div>
+			<br><br><br>	
+		</div>
+		<div class="row text-center divide">
+			<div class="col-sm-12"><br><br>
+				<h2>Benefits of registering</h2><br><hr><br>
+			</div>
+			<div class="col-xs-4">
+				<h1>Book the listings</h1>
+			</div>
+			<div class="col-xs-4">
+				<h1>Offline Transaction</h1>
+			</div>
+			<div class="col-xs-4">
+				<h1>Track your goods</h1>
+			</div>
+		</div>
+		<br>
+		<div class="row text-center main4">
+			<div class="register col-sm-4 col-sm-offset-4">
+					<h2>Shipper's Registration</h2><br>
+					<hr>
+				<div class="col-sm-8 col-sm-offset-2">
+					<h1>Name</h1><br>
+				</div>
+				<div class="col-sm-4 col-sm-offset-4">
+					<form><input type="text" name="name" placeholder="Enter your name" required></form><br>
+				</div>
+				<div class="col-sm-8 col-sm-offset-2">
+					<h1>Mobile Number</h1><br>
+				</div>
+				<div class="col-sm-4 col-sm-offset-4">
+					<form><input type="text" name="mobile" placeholder="Enter your mobile number" required></form><br>
+				</div>
+				<div class="col-sm-8 col-sm-offset-2">
+					<h1>Permanent Location</h1><br>
+				</div>
+				<div class="col-sm-4 col-sm-offset-4">
+					<form><input type="text" name="location" placeholder="Enter your location" required></form><br>
+				</div>
+			</div>
+			<div class="col-xs-4 col-xs-offset-5">
+				<h3 class="button">Register</h3>
+			</div>
+		</div>
+		<div class="row text-center divide">
+			<div class="col-sm-12"><br><br>
+				<h2>Benefits of registering</h2><br><hr><br>
+			</div>
+			<div class="col-xs-4">
+				<h1>Book the listings</h1>
+			</div>
+			<div class="col-xs-4">
+				<h1>Offline Transaction</h1>
+			</div>
+			<div class="col-xs-4">
+				<h1>Track your goods</h1>
+			</div>
+		</div>
+	</div>

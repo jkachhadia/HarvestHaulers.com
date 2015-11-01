@@ -1,0 +1,35 @@
+   <div class="fillform" align="center"> 
+<%= form_for(@message) do |f| %>
+  <% if @message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+      <ul>
+      <% @message.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+   <div class="fillform" align="center"> 
+    <%= 1828 %>
+  
+  <div class="field">
+    <%= f.label :user_name %><br>
+    <%= f.text_field :user_name %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile_no %><br>
+    <%= f.text_field :mobile_no %>
+  </div>
+  <div class="field">
+    <%= f.label :message %><br>
+    <%= f.text_area :message %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</div>
+<% end %>

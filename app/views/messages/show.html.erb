@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @message.user_id %>
+</p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @message.user_name %>
+</p>
+
+<p>
+  <strong>Mobile no:</strong>
+  <%= @message.mobile_no %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @message.message %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
